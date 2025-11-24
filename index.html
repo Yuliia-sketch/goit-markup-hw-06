@@ -61,58 +61,65 @@
       </div>
       <div class="mobile-menu is-open">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close"></button>
-          <nav>
-            <ul class="nav-list">
-          <li class="nav-items">
-            <a class="nav-link current" href="./index.html">Studio</a>
-          </li>
-          <li class="nav-items">
-            <a class="nav-link" href="">Portfolio</a>
-          </li>
-          <li class="nav-items">
-            <a class="nav-link" href="">Contacts</a>
-          </li>
-        </ul>
+          <button class="mobile-menu-close">
+            <svg class="icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <div>
+            <nav class="menu-nav">
+              <ul class="nav-list-menu">
+                <li class="nav-items-menu">
+                  <a class="nav-link-menu" href="">Studio</a>
+                </li>
+                <li class="nav-items-menu">
+                  <a class="nav-link-menu" href="">Portfolio</a>
+                </li>
+                <li class="nav-items-menu">
+                  <a class="nav-link-menu" href="">Contacts</a>
+                  </li>
+            </ul>
           </nav>
-          <address>
-            <ul class="contacts-list">
-          <li class="contacts-items">
-            <a class="contacts-link" href="mailto:info@devstudio.com"
+          </div>  
+          
+          <address class="contacts-menu">
+            <ul class="contacts-list-menu">
+              <li class="contacts-items-menu">
+            <a class="contacts-link-menu" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="contacts-items">
-            <a class="contacts-link" href="tel:+110001111111"
+          <li class="contacts-items-menu">
+            <a class="contacts-link-menu" href="tel:+110001111111"
               >+11 (000) 111-11-11</a>
           </li>
         </ul>
           </address>
-          <ul>
-            <li class="social-item">
-                 <a href="https://www.instagram.com/" target="_blank" class="social-link">
-                     <svg class="social-icon" width="16" height="16">
+          <ul class="social-networks-menu">
+            <li class="social-item-menu">
+                 <a href="https://www.instagram.com/" target="_blank" class="social-link-menu">
+                     <svg class="social-icon-menu" width="16" height="16">
                   <use href="./images/icons.svg#icon-instagram"></use>
                </svg>
               </a>
               </li>
-              <li class="social-item">
-                <a href="https://www.twitter.com/" target="_blank" class="social-link">
-                <svg class="social-icon" width="16" height="16">
+              <li class="social-item-menu">
+                <a href="https://www.twitter.com/" target="_blank" class="social-link-menu">
+                <svg class="social-icon-menu" width="16" height="16">
                    <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
               </li>
-              <li class="social-item">
-                <a href="https://www.facebook.com/" target="_blank" class="social-link">
-                <svg class="social-icon" width="16" height="16">
+              <li class="social-item-menu">
+                <a href="https://www.facebook.com/" target="_blank" class="social-link-menu">
+                <svg class="social-icon-menu" width="16" height="16">
                    <use href="./images/icons.svg#icon-facebook"></use>
                 </svg> 
               </a>
               </li>
-              <li class="social-item">
-                <a href="https://www.linkedin.com/" target="_blank" class="social-link">
-                <svg class="social-icon" width="16" height="16">
+              <li class="social-item-menu">
+                <a href="https://www.linkedin.com/" target="_blank" class="social-link-menu">
+                <svg class="social-icon-menu" width="16" height="16">
                    <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg> 
               </a>
@@ -124,7 +131,7 @@
     <!-- #endregion header-->
     <main>
       <!--#region hero-->
-      <section class="hidden page-hero">
+      <section class="page-hero">
         <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="hero-button" type="button">Order Service</button>
@@ -132,7 +139,7 @@
       </section>
       <!--#endregion hero-->
       <!--#region Feature-->
-      <section class="hidden page-feature">
+      <section class="page-feature">
         <div class="container">
         <h2 class="visually-hidden-feature-title">Feature 1</h2>
         <ul class="feature-list">
