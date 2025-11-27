@@ -311,6 +311,7 @@ a{
     background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/header/peopleoffice.jpg);
     margin: 0 auto;
+    max-width: 320px;
 }
 .hero-title{
     margin-left: auto;
@@ -364,9 +365,105 @@ a{
     .hero-title{
         margin-bottom: 48px;
     }
+    .hero-button:hover,.hero-button:focus{
+        background-color: #404BBF;
+    }
 }
 /*#endregion hero*/
 /*#region Feature*/
+.page-feature{
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.feature-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    height: 100%;
+}
 .icon{
     display: none;
 }
+.feature-title{
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+.feature-items{
+    display: block;
+    height: 100%;
+}
+.visually-hidden-feature-title{
+    display: none;
+}
+.paragraph-feature{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+@media screen and (min-width: 768px){
+    .feature-list{
+        column-gap: 24px ;
+    }
+    .feature-items{
+        width: calc((100% - 24px)/2);
+    }
+    .feature-title{
+        text-align: left;
+    } 
+}
+@media screen and (min-width: 1158px){
+    .page-feature{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .feature-list{
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .feature-items{
+        width: calc((100%-76px)/3);
+    }
+    .visually-hidden-feature-title{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+    .feature-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+    .paragraph-feature{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        background-color: #f4f4fd;
+        margin-bottom: 8px;
+    }
+}
+/*#endregion Feature*/
